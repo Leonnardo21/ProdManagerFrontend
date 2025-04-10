@@ -13,7 +13,6 @@ export default function Products() {
     async function fetchData() {
       try {
         const data = await getProducts();
-        console.log("API Response:", data);
         setProducts(Array.isArray(data.data) ? data.data : []);
       } catch (error) {
         console.error("Erro ao buscar produtos:", error);
