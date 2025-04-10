@@ -55,7 +55,7 @@ export default function FormProducts({saveProduct, initialData}){
         </div>
         <div>
           <label className="block font-bold">Código de Barras</label>
-          <input type="number" name="codeBar" value={product.codeBar} onChange={handleChange} className="w-full p-2 border rounded mt-1" required />
+          <input type="number" name="codeBar" value={product.codeBar} maxLength={13} onChange={handleChange} className="w-full p-2 border rounded mt-1" required />
         </div>
         <div>
           <label className="block font-bold">Categoria</label>
